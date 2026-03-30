@@ -1,0 +1,9 @@
+name = "titan-worker"
+main = "src/index.js"
+compatibility_date = "2026-03-30"
+
+[ai]
+binding = "AI"
+
+[vars]
+TITAN_MODEL = "@cf/meta/llama-3.1-8b-instruct"

@@ -1,0 +1,63 @@
+.tool-overview {
+  grid-template-columns: 260px 1fr;
+  min-height: 620px;
+  gap: 42px;
+  align-items: start;
+}
+
+.tool-card {
+  width: 260px;
+  min-height: 190px;
+  padding: 22px 20px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tool-card h3 {
+  margin-bottom: 10px;
+  font-size: clamp(1.45rem, 1.8vw, 2rem);
+  width: 100%;
+}
+
+.tool-card img {
+  width: 78px;
+  height: 78px;
+  margin-top: 8px;
+  display: block;
+}
+
+.tool-card--double h3 {
+  line-height: 0.92;
+}
+
+.tool-overview .notice-center {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 18px;
+}
+
+.tool-overview .notice-center h1 {
+  font-size: clamp(2rem, 3vw, 3.3rem);
+  line-height: 1.02;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .tool-overview {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .tool-card {
+    width: min(100%, 320px);
+  }
+
+  .tool-overview .notice-center {
+    min-height: 260px;
+  }
+}

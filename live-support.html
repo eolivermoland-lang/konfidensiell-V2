@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfidensiell | Live Chat</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/image-cleanup.css" />
+    <link rel="stylesheet" href="assets/styles/layout-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/live-support-page.css" />
+    <link rel="stylesheet" href="assets/styles/page-fill.css" />
+    <script defer src="assets/scripts/app.js"></script>
+  </head>
+  <body data-page="tools" class="page-fill live-support-page">
+    <main class="page-shell">
+      <section class="section-wrap">
+        <div data-site-header></div>
+        <section class="section-space">
+          <div class="support-shell">
+            <div class="support-hero">
+              <p class="support-kicker">Live support</p>
+              <h1>Snakk med oss</h1>
+              <p>Få rask hjelp i portalen med spørsmål om prosjekter, modeller og tjenester.</p>
+            </div>
+            <div class="chat-panel">
+              <div class="support-meta">
+                <span class="support-status">Support aktiv</span>
+                <span class="support-badge">Portal assistent</span>
+              </div>
+              <div class="chat-bubble" id="live-support-output">
+                Hei! jeg er din Personlige Assistent hva trenger du hjelp med?
+              </div>
+              <form class="chat-entry" data-chat-form data-output-target="#live-support-output">
+                <input class="chat-input" type="text" placeholder="Skriv Her!" />
+                <button class="chat-send" type="submit">&gt;</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <div data-site-footer></div>
+      </section>
+    </main>
+  </body>
+</html>

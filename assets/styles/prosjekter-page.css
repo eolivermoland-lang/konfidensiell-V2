@@ -1,0 +1,78 @@
+body.prosjekter-page .section-space {
+  padding-top: 16px;
+}
+
+body.prosjekter-page .projects-hero {
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto 24px;
+}
+
+body.prosjekter-page .projects-kicker {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(84, 0, 140, 0.08);
+  color: #54008c;
+  font-size: 1rem;
+}
+
+body.prosjekter-page .projects-title {
+  margin: 0 0 10px;
+  font-size: clamp(2.4rem, 4vw, 4.1rem);
+  line-height: 0.95;
+}
+
+body.prosjekter-page .projects-subtitle {
+  margin: 0 auto;
+  max-width: 980px;
+  font-size: clamp(1.05rem, 1.7vw, 1.55rem);
+  line-height: 1.28;
+}
+
+body.prosjekter-page .project-grid {
+  gap: 22px;
+}
+
+body.prosjekter-page .project-card {
+  min-height: 184px;
+  padding: 22px 22px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+body.prosjekter-page .project-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+body.prosjekter-page .project-label {
+  display: inline-flex;
+  margin-bottom: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.85rem;
+}
+
+body.prosjekter-page .project-card h3 {
+  margin-bottom: 12px;
+  font-size: clamp(1.75rem, 1.9vw, 2.3rem);
+}
+
+body.prosjekter-page .project-card p {
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 1024px) {
+  body.prosjekter-page .project-card {
+    min-height: auto;
+  }
+}

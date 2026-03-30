@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfidensiell | Beta Titan AI</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/image-cleanup.css" />
+    <link rel="stylesheet" href="assets/styles/layout-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/titan-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/page-fill.css" />
+    <script defer src="assets/scripts/app.js"></script>
+  </head>
+  <body data-page="tools" class="page-fill">
+    <main class="page-shell">
+      <section class="section-wrap">
+        <section class="section-space">
+          <div class="tool-detail-layout" data-ai-page>
+            <aside class="tool-sidebar">
+              <a class="ghost-button" href="beta-titan-ai.html">Ny chat</a>
+              <div class="conversation-list">
+                <span class="conversation-chip">Nå værende chat</span>
+              </div>
+            </aside>
+            <section class="tool-main">
+              <div class="tool-topbar">
+                <a class="mini-brand" href="index.html" aria-label="Til forsiden">
+                  <img src="assets/images/brand-mark.svg" alt="" />
+                </a>
+                <a class="portal-return" href="verktoy.html">Portal</a>
+              </div>
+              <h1 class="ai-message" data-ai-response>Jeg hjelper deg med hva som helst bare spør!</h1>
+              <form class="prompt-zone" data-model-group="official">
+                <button class="model-label" data-model-label type="button">Modell</button>
+                <div class="prompt-inner">
+                  <input class="chat-input" data-model-input type="text" placeholder="Lag en trygg og ryddig AI-assistent." />
+                  <div class="model-picker">
+                    <img src="assets/images/titan-mark.svg" alt="" />
+                    <div class="model-dropdown">
+                      <button class="model-trigger" data-model-trigger type="button">Modell</button>
+                      <div class="model-menu" data-model-menu></div>
+                    </div>
+                    <span class="selected-model" data-selected-model>Beta Titan AI</span>
+                  </div>
+                </div>
+              </form>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

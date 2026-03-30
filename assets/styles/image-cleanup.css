@@ -1,0 +1,13 @@
+.brand img,
+.mini-brand img,
+.tool-card img,
+.model-picker img {
+  object-fit: contain;
+  background: transparent !important;
+}
+
+.tool-card img,
+.model-picker img {
+  box-shadow: none !important;
+  border: none !important;
+}

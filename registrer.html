@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfidensiell | Opprett konto</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/image-cleanup.css" />
+    <link rel="stylesheet" href="assets/styles/layout-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/portal-page.css" />
+    <link rel="stylesheet" href="assets/styles/page-fill.css" />
+    <script defer src="assets/scripts/app.js"></script>
+  </head>
+  <body data-page="portal" class="page-fill portal-page">
+    <main class="page-shell">
+      <section class="section-wrap">
+        <div data-site-header></div>
+        <section class="auth-wrap">
+          <div class="auth-card">
+            <p class="auth-kicker">Ny konto</p>
+            <h1>Opprett Konto</h1>
+            <p class="auth-subtitle">Lag en konto for å få tilgang til portal-tjenester og AI-verktøy.</p>
+            <form data-register-form>
+              <label class="field-group">
+                <span>Navn / Bedrift</span>
+                <input class="auth-input" type="text" placeholder="Konfidensiell AS" />
+              </label>
+              <label class="field-group">
+                <span>E-Post</span>
+                <input class="auth-input" type="email" placeholder="deg@eksempel.no" />
+              </label>
+              <label class="field-group inline-submit">
+                <span>Passord</span>
+                <input class="auth-input" type="password" placeholder="Lag ett sterkt passord!" />
+                <button type="submit" aria-label="Opprett konto">&gt;</button>
+              </label>
+              <a class="auth-helper" href="portal.html">Har allerede konto?</a>
+            </form>
+          </div>
+        </section>
+        <div data-site-footer></div>
+      </section>
+    </main>
+  </body>
+</html>

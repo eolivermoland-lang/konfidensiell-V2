@@ -1,0 +1,89 @@
+body.verktoy-page .section-space {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+body.verktoy-page .portal-panel {
+  min-height: auto;
+  width: min(100%, 1420px);
+  margin: 0 auto;
+  padding: 32px 42px 40px;
+  border-radius: 38px;
+  position: relative;
+  overflow: hidden;
+}
+
+body.verktoy-page .portal-panel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.24);
+}
+
+body.verktoy-page .portal-kicker {
+  display: inline-flex;
+  margin: 0 auto 12px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.95rem;
+}
+
+body.verktoy-page .portal-panel h1 {
+  margin-bottom: 10px;
+  font-size: clamp(3rem, 4.6vw, 5rem);
+  line-height: 0.95;
+}
+
+body.verktoy-page .portal-subtitle {
+  max-width: 780px;
+  margin: 0 auto 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.16rem;
+}
+
+body.verktoy-page .portal-links {
+  gap: 16px;
+}
+
+body.verktoy-page .tool-list-button {
+  padding: 18px 24px;
+  font-size: clamp(1.45rem, 1.8vw, 1.9rem);
+  width: 100%;
+  max-width: 1290px;
+  min-height: 78px;
+  margin: 0 auto;
+  border-radius: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+body.verktoy-page .tool-list-button::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 5px;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+body.verktoy-page .tool-list-button span {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 760px) {
+  body.verktoy-page .portal-panel {
+    padding: 24px 18px 26px;
+  }
+
+  body.verktoy-page .portal-subtitle {
+    font-size: 1rem;
+  }
+}

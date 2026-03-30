@@ -1,0 +1,30 @@
+body.kontakt-page {
+  min-height: 100vh;
+}
+
+body.kontakt-page .page-shell {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body.kontakt-page .section-wrap {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+body.kontakt-page .section-space {
+  flex: 1;
+  display: flex;
+}
+
+body.kontakt-page .contact-panel {
+  width: 100%;
+}
+
+body.kontakt-page .site-footer {
+  margin-top: auto;
+}

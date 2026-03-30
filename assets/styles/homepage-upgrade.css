@@ -1,0 +1,220 @@
+body.homepage-upgrade .hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 720px;
+  padding: 54px 34px 42px;
+  justify-content: center;
+}
+
+body.homepage-upgrade .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(84, 0, 140, 0.1), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(84, 0, 140, 0.08), transparent 28%);
+  pointer-events: none;
+}
+
+body.homepage-upgrade .hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 38px;
+  align-items: center;
+}
+
+body.homepage-upgrade .hero-copy {
+  text-align: left;
+}
+
+body.homepage-upgrade .hero-kicker {
+  display: inline-flex;
+  margin: 0 0 18px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: rgba(84, 0, 140, 0.1);
+  color: #54008c;
+  font-size: 0.98rem;
+}
+
+body.homepage-upgrade .hero h1 {
+  margin: 0 0 18px;
+  max-width: 760px;
+  font-size: clamp(3.3rem, 5vw, 5.4rem);
+  line-height: 0.95;
+}
+
+body.homepage-upgrade .hero-line {
+  width: min(100%, 520px);
+  margin: 0 0 20px;
+  height: 7px;
+}
+
+body.homepage-upgrade .hero p {
+  margin: 0 0 24px;
+  max-width: 720px;
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  line-height: 1.28;
+  text-align: left;
+}
+
+body.homepage-upgrade .hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 26px;
+}
+
+body.homepage-upgrade .hero-point {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(84, 0, 140, 0.06);
+  font-size: 1rem;
+}
+
+body.homepage-upgrade .hero-point span {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: #54008c;
+}
+
+body.homepage-upgrade .button-row {
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+body.homepage-upgrade .primary-button {
+  min-width: 190px;
+  min-height: 54px;
+  border-radius: 16px;
+}
+
+body.homepage-upgrade .secondary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 190px;
+  min-height: 54px;
+  padding: 12px 24px;
+  border-radius: 16px;
+  background: rgba(84, 0, 140, 0.08);
+  color: #54008c;
+  border: 1px solid rgba(84, 0, 140, 0.12);
+}
+
+body.homepage-upgrade .tag-row {
+  justify-content: flex-start;
+}
+
+body.homepage-upgrade .hero-side {
+  display: grid;
+  gap: 18px;
+}
+
+body.homepage-upgrade .hero-card {
+  background: linear-gradient(180deg, rgba(84, 0, 140, 0.82), rgba(84, 0, 140, 0.72));
+  color: #ffffff;
+  border-radius: 30px;
+  padding: 24px;
+  box-shadow: 0 22px 42px rgba(84, 0, 140, 0.12);
+}
+
+body.homepage-upgrade .hero-card h2 {
+  margin: 0 0 10px;
+  font-size: clamp(1.6rem, 2.2vw, 2.3rem);
+}
+
+body.homepage-upgrade .hero-card p {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.28;
+  text-align: left;
+}
+
+body.homepage-upgrade .hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+body.homepage-upgrade .metric {
+  background: rgba(84, 0, 140, 0.08);
+  border-radius: 24px;
+  padding: 18px 14px;
+  text-align: center;
+}
+
+body.homepage-upgrade .metric strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #54008c;
+  font-size: 1.55rem;
+}
+
+body.homepage-upgrade .metric span {
+  font-size: 0.95rem;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+body.homepage-upgrade .trust-strip {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1240px;
+  margin: 34px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+body.homepage-upgrade .trust-card {
+  background: rgba(84, 0, 140, 0.05);
+  border: 1px solid rgba(84, 0, 140, 0.08);
+  border-radius: 24px;
+  padding: 18px 18px 16px;
+  text-align: left;
+}
+
+body.homepage-upgrade .trust-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #54008c;
+  font-size: 1.08rem;
+}
+
+body.homepage-upgrade .trust-card p {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.28;
+  color: rgba(17, 17, 17, 0.76);
+}
+
+@media (max-width: 1100px) {
+  body.homepage-upgrade .hero-inner,
+  body.homepage-upgrade .trust-strip,
+  body.homepage-upgrade .hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  body.homepage-upgrade .hero-copy,
+  body.homepage-upgrade .hero p,
+  body.homepage-upgrade .tag-row,
+  body.homepage-upgrade .button-row {
+    text-align: center;
+    justify-content: center;
+  }
+
+  body.homepage-upgrade .hero-line {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

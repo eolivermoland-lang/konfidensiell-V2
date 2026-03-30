@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal | Konfidensiell</title>
+    <meta
+      name="description"
+      content="Logg inn i Konfidensiell-portalen for å få tilgang til verktøy, modeller, support og digitale tjenester."
+    />
+    <meta name="robots" content="noindex, follow" />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/image-cleanup.css" />
+    <link rel="stylesheet" href="assets/styles/layout-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/portal-page.css" />
+    <link rel="stylesheet" href="assets/styles/page-fill.css" />
+    <script defer src="assets/scripts/app.js"></script>
+  </head>
+  <body data-page="portal" class="page-fill portal-page">
+    <main class="page-shell">
+      <section class="section-wrap">
+        <div data-site-header></div>
+        <section class="auth-wrap">
+          <div class="auth-card">
+            <p class="auth-kicker">Portal tilgang</p>
+            <h1>Logg Inn</h1>
+            <p class="auth-subtitle">Logg inn for å åpne portal-tjenester, modeller og verktøy.</p>
+            <form data-portal-login>
+              <label class="field-group">
+                <span>E-Post</span>
+                <input class="auth-input" type="email" placeholder="olanorman@eksempel.com" />
+              </label>
+              <label class="field-group inline-submit">
+                <span>Passord</span>
+                <input class="auth-input" type="password" placeholder="Velg ett sterkt passord!" />
+                <button type="submit" aria-label="Logg inn">&gt;</button>
+              </label>
+              <a class="auth-helper" href="registrer.html">Ingen Konto?</a>
+            </form>
+          </div>
+        </section>
+        <div data-site-footer></div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konfidensiell | Titan AI</title>
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/image-cleanup.css" />
+    <link rel="stylesheet" href="assets/styles/layout-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/titan-overrides.css" />
+    <link rel="stylesheet" href="assets/styles/page-fill.css" />
+    <script defer src="assets/scripts/app.js"></script>
+  </head>
+  <body data-page="tools" class="page-fill" data-titan-endpoint="https://titan-worker.eolivermoland.workers.dev/api/titan">
+    <main class="page-shell">
+      <section class="section-wrap">
+        <section class="section-space">
+          <div class="tool-detail-layout" data-ai-page>
+            <aside class="tool-sidebar">
+              <a class="ghost-button" href="titan-ai.html">Ny chat</a>
+              <div class="conversation-list">
+                <span class="conversation-chip">Nå værende chat</span>
+              </div>
+            </aside>
+            <section class="tool-main">
+              <div class="tool-topbar">
+                <a class="mini-brand" href="index.html" aria-label="Til forsiden">
+                  <img src="assets/images/brand-mark.svg" alt="" />
+                </a>
+                <a class="portal-return" href="verktoy.html">Portal</a>
+              </div>
+              <section class="titan-chat" aria-live="polite" data-titan-shell>
+                <div class="titan-chat-top">
+                  <span class="titan-status" data-titan-status>Klar</span>
+                  <span class="titan-mode" data-titan-mode>Modus: Standard</span>
+                </div>
+
+                <button class="thinking-toggle" type="button" data-thinking-toggle aria-expanded="false">
+                  <span class="thinking-toggle-label" data-thinking-toggle-label>Tenker...</span>
+                  <span class="thinking-toggle-arrow">▾</span>
+                </button>
+
+                <section class="thinking-drawer" data-titan-thinking hidden>
+                  <p class="thinking-summary" data-thinking-summary>Ingen analyse ennå.</p>
+                  <div class="thinking-group">
+                    <span class="thinking-group-title">Forslag</span>
+                    <ul class="thinking-list" data-thinking-list>
+                      <li>Venter på prompt...</li>
+                    </ul>
+                  </div>
+                  <div class="thinking-group">
+                    <span class="thinking-group-title">Valgt retning</span>
+                    <p class="thinking-choice" data-thinking-choice>Titan velger beste spor når du sender en prompt.</p>
+                  </div>
+                </section>
+
+                <div class="ai-message-wrap">
+                  <h1 class="ai-message" data-ai-response>Jeg hjelper deg med hva som helst bare spør!</h1>
+                  <section class="code-canvas" data-code-canvas hidden>
+                    <div class="code-canvas-top">
+                      <div class="code-tabs" data-code-tabs></div>
+                      <button class="code-download" type="button" data-code-download>Last ned fil</button>
+                    </div>
+                    <div class="code-meta" data-code-meta>Kodefil klar.</div>
+                    <pre class="code-view"><code data-code-content></code></pre>
+                  </section>
+                </div>
+                <p class="titan-meta" data-titan-meta>Status: klar for testing.</p>
+              </section>
+              <form class="prompt-zone" data-model-group="dev">
+                <button class="model-label" data-model-label type="button">Modell</button>
+                <div class="prompt-inner">
+                  <input class="chat-input" data-model-input type="text" placeholder="Lag en Bio til en utvikler." />
+                  <div class="model-picker">
+                    <img src="assets/images/titan-mark.svg" alt="" />
+                    <div class="model-dropdown">
+                      <button class="model-trigger" data-model-trigger type="button">Modell</button>
+                      <div class="model-menu" data-model-menu></div>
+                    </div>
+                    <span class="selected-model" data-selected-model>Titan 1x</span>
+                  </div>
+                </div>
+                <div class="titan-actions">
+                  <button class="titan-send" type="submit">Send til Titan</button>
+                  <button class="titan-stop" type="button" data-titan-stop>Stopp</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
